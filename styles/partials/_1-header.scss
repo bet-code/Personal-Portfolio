@@ -1,7 +1,43 @@
 // ===== HEADER ======
 
 header {
-    width: 100%;
     min-height: 100vh;
-    background: linear-gradient($primaryColour, $secondaryColour);
+    background: linear-gradient($primaryColour, $secondaryColour)
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.headerNav {
+    list-style: none;
+    display: flex;
+}
+
+.headerNav a {
+    font-size: 1.5rem;
+    color: $sixthColour;
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+// ===== hero =====
+
+h1 {
+    font-size: 6rem;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.btnHero {
+    text-align: center;
+}
+
+
+

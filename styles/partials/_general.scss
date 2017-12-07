@@ -12,6 +12,20 @@ html {
     margin: 0 auto;
 }
 
+// ===== button
+ 
+.btn {
+    color: $primaryColour;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background: $sixthColour;
+    border-radius: 40px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+
+}
 
 
 

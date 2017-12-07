@@ -1,15 +1,3 @@
-header {
-  width: 100%;
-  min-height: 100vh; }
-
-input {
-  font-size: 3rem;
-  padding: 5px; }
-
-textarea {
-  width: 80px;
-  height: 50px; }
-
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
@@ -151,3 +139,67 @@ html {
   width: 80%;
   max-width: 1500px;
   margin: 0 auto; }
+
+.btn {
+  color: #0393ff;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background: #fcfcfc;
+  border-radius: 40px;
+  text-transform: uppercase;
+  letter-spacing: .5px; }
+
+header {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0393ff), to(#00f2fe));
+  background: -webkit-linear-gradient(#0393ff, #00f2fe);
+  background: -o-linear-gradient(#0393ff, #00f2fe);
+  background: linear-gradient(#0393ff, #00f2fe); }
+
+.navbar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.headerNav {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.headerNav a {
+  font-size: 1.5rem;
+  color: #fcfcfc;
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 6rem;
+  text-align: center;
+  margin-top: 200px; }
+
+.btnHero {
+  text-align: center; }
+
+input {
+  font-size: 3rem;
+  padding: 5px; }
+
+textarea {
+  width: 80px;
+  height: 50px; }
