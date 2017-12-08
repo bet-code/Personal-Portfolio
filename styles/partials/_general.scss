@@ -6,11 +6,29 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    color: $fourthColour;
+    background: $sixthColour;
+}
+
 .wrapper {
     width: 80%;
     max-width: 1500px;
     margin: 0 auto;
 }
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
 
 // ===== button
  
@@ -24,7 +42,27 @@ html {
     border-radius: 40px;
     text-transform: uppercase;
     letter-spacing: .5px;
+}
 
+// social icon lists
+.socialIconList {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    li {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        margin: 0 5px;
+        background: $secondaryColour;
+        border-radius: 50%;
+        i {
+            line-height: 40px;
+            font-size: 2rem;
+            color: $primaryColour;
+        }
+    }
 }
 
 

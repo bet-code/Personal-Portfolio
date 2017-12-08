@@ -1,0 +1,38 @@
+// ===== ABOUT ME =====
+
+.sectionAboutMe {
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+        margin: 80px 0 40px;
+    }
+    .aboutMeArticle {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.aboutMeColumn {
+    width: 50%;
+    .aboutMeInfo{
+        h3 {
+            margin-top: 0;
+        }
+    }
+}
+
+.profilePic {
+    width: 45%;
+    img {
+        max-width: 100%;
+        object-fit: cover;
+
+    }
+}
+
+.followMeSocial {
+    h3 {
+        font-size: 2.5rem;
+    }
+}
+

@@ -135,10 +135,23 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html {
   font-size: 62.5%; }
 
+body {
+  color: #222;
+  background: #fcfcfc; }
+
 .wrapper {
   width: 80%;
   max-width: 1500px;
   margin: 0 auto; }
+
+h2 {
+  font-size: 3.5rem; }
+
+h3 {
+  font-size: 2.5rem; }
+
+p {
+  font-size: 1.6rem; }
 
 .btn {
   color: #0393ff;
@@ -150,6 +163,26 @@ html {
   border-radius: 40px;
   text-transform: uppercase;
   letter-spacing: .5px; }
+
+.socialIconList {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0; }
+  .socialIconList li {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin: 0 5px;
+    background: #00f2fe;
+    border-radius: 50%; }
+    .socialIconList li i {
+      line-height: 40px;
+      font-size: 2rem;
+      color: #0393ff; }
 
 header {
   min-height: 100vh;
@@ -170,7 +203,8 @@ header {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  padding-top: 20px; }
 
 .headerNav {
   list-style: none;
@@ -188,6 +222,9 @@ header {
   letter-spacing: 1px;
   text-transform: uppercase; }
 
+.hero {
+  height: 100%; }
+
 h1 {
   font-size: 6rem;
   text-align: center;
@@ -196,10 +233,126 @@ h1 {
 .btnHero {
   text-align: center; }
 
-input {
-  font-size: 3rem;
-  padding: 5px; }
+.sectionAboutMe h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 80px 0 40px; }
 
-textarea {
-  width: 80px;
-  height: 50px; }
+.sectionAboutMe .aboutMeArticle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.aboutMeColumn {
+  width: 50%; }
+  .aboutMeColumn .aboutMeInfo h3 {
+    margin-top: 0; }
+
+.profilePic {
+  width: 45%; }
+  .profilePic img {
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
+
+.followMeSocial h3 {
+  font-size: 2.5rem; }
+
+.skills {
+  margin-top: 80px;
+  padding: 80px 0;
+  background: #00f2fe; }
+  .skills .skillList {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .skills .skillList li {
+      width: calc(11.11% - 5px);
+      text-align: center; }
+      .skills .skillList li i {
+        font-size: 8rem; }
+      .skills .skillList li p {
+        font-size: 2rem;
+        margin: 10px 0 0;
+        padding: 0; }
+
+.portfolio h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 80px 0; }
+
+.projectList {
+  list-style: none; }
+  .projectList li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 40px 0; }
+    .projectList li:nth-of-type(2) {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse; }
+      .projectList li:nth-of-type(2) article {
+        text-align: right; }
+    .projectList li figure {
+      width: 45%; }
+      .projectList li figure img {
+        max-width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover; }
+    .projectList li article {
+      width: 45%; }
+
+.contactForm {
+  margin: 80px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .contactForm form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 35%;
+    font-size: 1.6rem; }
+    .contactForm form input {
+      padding: 10px; }
+    .contactForm form textarea {
+      padding: 10px; }
+
+footer {
+  background: #0393ff;
+  text-align: center;
+  margin: 80px 0 0;
+  padding: 5px; }

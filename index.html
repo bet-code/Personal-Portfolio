@@ -33,22 +33,28 @@
     <main>
         <section class="sectionAboutMe" id="aboutMeSection">
             <h2>About Me</h2>
-            <img src="" alt="">
-            <article class="articleAboutMe">
-                <h3>I'm Gilbert, a Frontend Developer...</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi earum ab eligendi aspernatur eos voluptate recusandae veniam iusto iure! Accusamus, molestiae quidem illum quos saepe earum aliquam quae recusandae eius!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quae optio est aut dolore? Veritatis praesentium reprehenderit itaque. Vitae sapiente non magnam ab quidem corporis accusamus quasi veritatis numquam quae.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt expedita, voluptatibus deserunt a aut iure ab dolores ullam provident quas?</p>
+            <article class="aboutMeArticle wrapper">
+                <div class="profilePic">
+                    <img src="http://via.placeholder.com/500/500" alt="">
+                </div>
+                <section class="aboutMeColumn">
+                    <div class="aboutMeInfo">
+                        <h3>I'm Gilbert, a Frontend Developer...</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi earum ab eligendi aspernatur eos voluptate recusandae veniam iusto iure! Accusamus, molestiae quidem illum quos saepe earum aliquam quae recusandae eius!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quae optio est aut dolore? Veritatis praesentium reprehenderit itaque. Vitae sapiente non magnam ab quidem corporis accusamus quasi veritatis numquam quae.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt expedita, voluptatibus deserunt a aut iure ab dolores ullam provident quas?</p>
+                    </div>
+                    <section class="followMeSocial" id="followMeSocialSection">
+                        <h3>Follow Me On</h3>
+                        <ul class="socialIconList">
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </section>
+                </section>
             </article>
-            <section class="followMeSocial" id="followMeSocialSection">
-                <h3>Follow Me On</h3>
-                <ul>
-                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                </ul>
-            </section>
             <section class="skills" id="skillsSection">
                 <ul class="skillList">
                     <li>
@@ -75,25 +81,14 @@
                         <i class="devicon-html5-plain"></i>
                         <p>HTML5</p>
                     </li>
-                    <li>
-                        <i class="devicon-html5-plain"></i>
-                        <p>HTML5</p>
-                    </li>
-                    <li>
-                        <i class="devicon-html5-plain"></i>
-                        <p>HTML5</p>
-                    </li>
-                    <li>
-                        <i class="devicon-html5-plain"></i>
-                        <p>HTML5</p>
-                    </li>
                 </ul>
             </section>
-            <section class="portfolio" id="portfolioSection">
+            <section class="portfolio wrapper" id="portfolioSection">
+                <h2>Portfolio</h2>
                 <ul class="projectList">
                     <li>
                         <figure>
-                            <img src="" alt="">
+                            <img src="http://via.placeholder.com/450/450" alt="">
                             <figcaption>
                                 <a href="#">Project Title</a>
                             </figcaption>
@@ -105,7 +100,7 @@
                     </li>
                     <li>
                         <figure>
-                            <img src="" alt="">
+                            <img src="http://via.placeholder.com/450/450" alt="">
                             <figcaption>
                                 <a href="#">Project Title</a>
                             </figcaption>
@@ -117,7 +112,7 @@
                     </li>
                     <li>
                         <figure>
-                            <img src="" alt="">
+                            <img src="http://via.placeholder.com/450/450" alt="">
                             <figcaption>
                                 <a href="#">Project Title</a>
                             </figcaption>
@@ -129,32 +124,33 @@
                     </li>
                 </ul>
             </section>
-                <form id="contactForm" method="POST">
-                    <input type="text" name="name" placeholder="Your name">
-                    <input type="email" name="_replyto" placeholder="Your email">
-                    <textarea name="message" placeholder="Your message"></textarea>
-                    <input type="submit" value="Send">
-                </form>
+            <section class="contactSection" id="contactSection">
+                <h2>Get in Touch</h2>
+                <section class="contactForm wrapper">
+                    <form id="contactForm" method="POST">
+                        <input type="text" name="name" placeholder="Your name">
+                        <input type="email" name="_replyto" placeholder="Your email">
+                        <textarea name="message" placeholder="Your message"></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+                    <div class="contactSocial">
+                        <ul class="socialIconList">
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </section>
             </section>
+            <footer>
+                <p>&copy; Gilbert Jose 2017</p>               
+            </footer>            
+        </main>
 
+    <script src="https://use.fontawesome.com/452826394c.js"></script>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script src="scripts/main.js"></script>
 
-            <script src="https://use.fontawesome.com/452826394c.js"></script>
-            <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
-            <script src="scripts/main.js"></script>
-        </section>
-        <section class="contactSocial">
-            <ul>
-                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            </ul>
-        </section>
-        <footer>
-
-        </footer>
-
-    </main>
-    
 </body>
 </html>
