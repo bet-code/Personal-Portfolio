@@ -1,47 +1,174 @@
 // ===== HEADER ======
 
-header {
-    min-height: 100vh;
-    background: linear-gradient($primaryColour, $secondaryColour)
-}
-
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
+    background: linear-gradient(to left, $thirdColour, $primaryColour, darken($thirdColour, 10) 110% );
+    border-bottom: 2px solid $thirdAccentColour;
+    .innerNavBar {
+        display: flex;
+        align-items: center;
+    }
 }
 
+.logo {
+    font-size: 2rem;
+    flex: 1;
+    padding: 10px 0;
+    margin: 0;
+    /* Landscape phone to portrait tablet */
+    @media (max-width: 768px) {
+        display: inline-block;
+    }
+    h1 {
+        color: $secondaryColour;
+        margin: 0;
+        // text-shadow: 0 1px 0 $thirdAccentColour, 0 0 1px $secondaryColour;
+        span {
+            color: $thirdAccentColour;
+            text-shadow: 0 .5px 0 $secondaryColour;
+        }
+    }
+}
 .headerNav {
+    margin: 0;
+    padding: 15px;
     list-style: none;
     display: flex;
+    /* Landscape phone to portrait tablet */
+    @media (max-width: 768px) {
+        display: none;
+    }
+    li {
+        position: relative;
+        margin-right: 20px;
+        &:last-of-type {
+            margin-right: 0;
+        }
+        &:hover a {
+            color: $fifthColour;
+        }
+        &:before {
+            content:'';
+            width: 0px;
+            height: 3px;
+            background: $sixthAccentColour;
+            position: absolute;
+            top: -30%;
+            left: 0;
+            transition: all .3s ease;
+        }
+        &:after {
+            content:'';
+            width: 0px;
+            height: 3px;
+            background: $thirdAccentColour;
+            position: absolute;
+            top: -30%;
+            right: 0;
+            transition: all .3s ease;
+        }
+        a { 
+            font-size: 1.6rem;
+            margin: 0;   
+            color: $secondaryColour;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: .5px;
+            transition: all .3s ease;
+            &:before {
+                content:'';
+                width: 0px;
+                height: 3px;
+                background: $thirdAccentColour;
+                position: absolute;
+                bottom: -30%;
+                left: 0;
+                transition: all .3s ease;
+            }
+            &:after {
+                content:'';
+                width: 0px;
+                height: 3px;
+                background: $sixthAccentColour;
+                position: absolute;
+                bottom: -30%;
+                right: 0;
+                transition: all .3s ease;
+            }
+        }
+    }    
 }
 
-.headerNav a {
-    font-size: 1.5rem;
-    color: $sixthColour;
-    display: block;
-    padding: 5px 10px;
-    text-decoration: none;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
+  
+  .headerNav li:hover:before,
+  .headerNav li:hover a:before {
+    width: 50%;
+    transform: translateX(100%);
+  }
+  
+  .headerNav li:hover:after,
+  .headerNav li:hover a:after {
+    width: 50%;
+    transform: translateX(-100%);
+  }
 
 // ===== hero =====
 
 .hero {
-    height: 100%;
+    justify-content: space-between;
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient($secondaryOverlay, $primaryOverlay),
+        url(../assets/hero.jpg) bottom no-repeat;
+    background-size: cover;
+    position: relative;
+        .heroHeading {
+                /* Landscape phones and down */
+                @media (max-width: 480px) {
+                    width: 90%;
+                }         
+            h1 {
+                display: inline-block;
+                font-size: 6rem;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                word-spacing: 10px;
+                color: $secondaryColour;
+                margin: 0;
+                padding: 0;
+                text-shadow: 0 1px 0 $thirdOverlay, 0 0 3px $thirdOverlay;
+                position: relative;
+                /* Landscape phone to portrait tablet */
+                @media (max-width: 768px) {
+                    font-size: 5rem;
+                }
+                /* Landscape phones and down */
+                @media (max-width: 480px) {
+                    font-size: 4.2rem;
+                }
+            }
+            p {
+                color: $thirdAccentColour;
+                font-size: 2rem;
+                letter-spacing: 1px;
+                word-spacing: 2px;
+                margin-top: 0;
+                text-shadow: 0 1px 0 $primaryColour;
+                &:after {
+                    content: '|';
+                    color: $secondaryColour;
+                    animation: blink .5s linear infinite alternate;
+                }
+            }
+        }
+        
 }
 
-h1 {
-    font-size: 6rem;
-    text-align: center;
-    margin-top: 200px;
+@keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
 }
 
-.btnHero {
-    text-align: center;
-}
 
 
 

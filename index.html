@@ -5,29 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gilbert Jose</title>
+    <link rel="shortcut icon" href="assets/codeSymbol.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
-        <div class="navbar wrapper">
-            <img class="logo" src="assets/logo.png" alt="Gilbert Jose logo">
-            <nav>
-                <ul class="headerNav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>        
-        </div>
-        <section class="hero" id="homeSection">
-            <h1>I'm Frontend Developer</h1>
-            <div class="btnHero">
-                <a href="#" class="btn">Resume</a>
-                <a href="#" class="btn">Contact</a>
+        <!-- slideout nav - initialized at media query -->
+        <div class="slideOutNav">  
+            <input type="checkbox" id="toggleMenu" />
+            <label for="toggleMenu" class="menuOpen">&#9776;</label>
+            <label for="toggleMenu" class="menuClose">&#9747;</label>
+            <ul class="headerNav">
+                    <li><a href="#homeSection">Home</a></li>
+                    <li><a href="#aboutMeSection">About Me</a></li>
+                    <li><a href="#portfolioSection">Portfolio</a></li>
+                    <li><a href="#contactSection">Contact</a></li>
+            </ul>
+        </div>   <!-- end of slideout nav -->
+        <div class="navbar">
+            <div class="innerNavBar wrapper">
+                <div class="logo">
+                    <h1><span>&lt;</span>gj <span>&sol;&gt;</span></h1>
+                </div>
+                <nav>
+                    <ul class="headerNav">
+                        <li><a href="#homeSection">Home</a></li>
+                        <li><a href="#aboutMeSection">About Me</a></li>
+                        <li><a href="#portfolioSection">Portfolio</a></li>
+                        <li><a href="#contactSection">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
+        </div>
+        <section class="hero flexRow" id="homeSection">
+            <section class="heroHeading wrapper">
+                <h1>Gilbert Jose</h1>
+                <p>Web Developer</p>
+                <div class="btnHero">
+                    <a href="assets/gilbertResume.pdf" download="gilbert-resume" class="btn">Resume</a>
+                    <a href="#contactSection" class="btn">Contact</a>
+                </div>
+            </section>
         </section>
     </header>
     <main>
@@ -35,121 +56,156 @@
             <h2>About Me</h2>
             <article class="aboutMeArticle wrapper">
                 <div class="profilePic">
-                    <img src="http://via.placeholder.com/500/500" alt="">
+                    <img src="assets/aboutMe1.jpg" alt="">
                 </div>
                 <section class="aboutMeColumn">
                     <div class="aboutMeInfo">
-                        <h3>I'm Gilbert, a Frontend Developer...</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi earum ab eligendi aspernatur eos voluptate recusandae veniam iusto iure! Accusamus, molestiae quidem illum quos saepe earum aliquam quae recusandae eius!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quae optio est aut dolore? Veritatis praesentium reprehenderit itaque. Vitae sapiente non magnam ab quidem corporis accusamus quasi veritatis numquam quae.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt expedita, voluptatibus deserunt a aut iure ab dolores ullam provident quas?</p>
+                        <h3>Hello, my name is Gilbert </h3>
+                        <p>I'm a Web developer and technology enthusiast with over 10 years of professional IT technical support and customer service experience in a telecommunication environment.</p>
+                        <p>As much as I love tech and gizmos, I also love building beautiful and functional websites.  Always looking forward to learn and and take on challenges that will help me grow as a developer.</p>
                     </div>
-                    <section class="followMeSocial" id="followMeSocialSection">
-                        <h3>Follow Me On</h3>
-                        <ul class="socialIconList">
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <ul class="socialIconList">
+                            <li><a href="https://www.linkedin.com/in/gilbertjose" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="mailto:code@gilbertjose.ca"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/gilbert_j5" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/bet-code" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                            <li><a href="https://codepen.io/bet-code/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
                         </ul>
-                    </section>
-                </section>
+                </section>                    
             </article>
+            </section>
             <section class="skills" id="skillsSection">
-                <ul class="skillList">
-                    <li>
-                        <i class="devicon-html5-plain"></i>
-                        <p>HTML5</p>
-                    </li>
-                    <li>
-                        <i class="devicon-html5-plain"></i>
-                        <p>HTML5</p>
-                    </li>
-                    <li>
-                        <i class="devicon-html5-plain"></i>
-                        <p>HTML5</p>
-                    </li>
-                    <li>
-                        <i class="devicon-html5-plain"></i>
-                        <p>HTML5</p>
-                    </li>
-                    <li>
-                        <i class="devicon-html5-plain"></i>
-                        <p>HTML5</p>
-                    </li>
-                    <li>
-                        <i class="devicon-html5-plain"></i>
-                        <p>HTML5</p>
-                    </li>
-                </ul>
+                <div class="wrapper">
+                    <h2>Skills & Tools</h2>
+                    <ul class="skillList">
+                        <li>
+                            <i class="devicon-javascript-plain"></i>
+                            <p>JavaScript</p>
+                        </li>
+                        <li>
+                            <i class="devicon-jquery-plain"></i>
+                            <p>jQuery</p>
+                        </li>
+                        <li>
+                            <i class="devicon-react-plain"></i>
+                            <p>React</p>
+                        </li>
+                        <li>
+                            <i class="devicon-gulp-plain"></i>
+                            <p>Gulp</p>
+                        </li>
+                        <li>
+                            <i class="devicon-git-plain"></i>
+                            <p>Git</p>
+                        </li>
+                        <li>
+                            <i class="devicon-github-plain"></i>
+                            <p>GitHub</p>
+                        </li>
+                        <li>
+                            <i class="devicon-nodejs-plain"></i>
+                            <p>Node.js</p>
+                        </li>
+                        <li>
+                            <i class="devicon-sass-original"></i>
+                            <p>Sass</p>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section class="portfolio wrapper" id="portfolioSection">
                 <h2>Portfolio</h2>
                 <ul class="projectList">
                     <li>
                         <figure>
-                            <img src="http://via.placeholder.com/450/450" alt="">
-                            <figcaption>
-                                <a href="#">Project Title</a>
-                            </figcaption>
+                            <img src="assets/ytsearch.jpg" alt="">
                         </figure>
                         <article>
-                            <h3>Project Title</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ipsa pariatur harum corrupti quod, tenetur blanditiis! Dolores vel consectetur voluptates minima saepe eligendi quasi inventore magnam facilis, obcaecati totam hic?</p>
+                            <h3>YouTube Quick Search</h3>
+                            <p>Recreating YouTube video player website. Searching for videos is instant as you type.  React, YouTube API, ES6, Bootstrap, Lodash</p>
+                            <a class="btn" href="http://ytsearch.gilbertjose.ca/" target="_blank">View Live</a>
                         </article>
                     </li>
                     <li>
                         <figure>
-                            <img src="http://via.placeholder.com/450/450" alt="">
-                            <figcaption>
-                                <a href="#">Project Title</a>
-                            </figcaption>
+                            <img src="assets/proj3.jpg" alt="">
                         </figure>
                         <article>
-                            <h3>Project Title</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ipsa pariatur harum corrupti quod, tenetur blanditiis! Dolores vel consectetur voluptates minima saepe eligendi quasi inventore magnam facilis, obcaecati totam hic?</p>
+                            <h3>Heartbeatz</h3>
+                            <p>Built with JavaScript and jQuery. Play the drum loop machine and dynamically select and change beats on the fly.  Highly addicting.</p>
+                            <a class="btn" href="http://heartbeat.gilbertjose.ca" target="_blank">View Live</a>
                         </article>
                     </li>
                     <li>
                         <figure>
-                            <img src="http://via.placeholder.com/450/450" alt="">
-                            <figcaption>
-                                <a href="#">Project Title</a>
-                            </figcaption>
+                            <img src="assets/psd1.jpg" alt="">
                         </figure>
                         <article>
-                            <h3>Project Title</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ipsa pariatur harum corrupti quod, tenetur blanditiis! Dolores vel consectetur voluptates minima saepe eligendi quasi inventore magnam facilis, obcaecati totam hic?</p>
+                            <h3>Coursea</h3>
+                            <p>Pixel perfect and responsive PSD conversion of an online course website. Built with HTML5, CSS3 and Sass.</p>
+                            <a class="btn" href="http://coursea.gilbertjose.ca/" target="_blank">View Live</a>
                         </article>
                     </li>
+                    <li>
+                        <figure>
+                            <img src="assets/fekra.jpg" alt="">
+                        </figure>
+                        <article>
+                            <h3>Fekra</h3>
+                            <p>Pixel perfect and responsive PSD conversion of an agency website. Built with HTML5 and CSS3.</p>
+                            <a class="btn" href="http://fekra.gilbertjose.ca/" target="_blank">View Live</a>
+                        </article>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="assets/proj6.jpg" alt="">
+                        </figure>
+                        <article>
+                            <h3>Moondollars</h3>
+                            <p>Team project. Built with React, Yummly and LCBO API and responsive. Need a coffee coctail recipe? Moondollar makes it easy to find coffee cocktail recipes. It will even provide the lcbo information of the alcohol you need to make the coctail.</p>
+                            <a class="btn" href="https://moondollars-bdd24.firebaseapp.com/" target="_blank">View Live</a>
+                        </article>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="assets/movieFinder.jpg" alt="Movie finder website shown on a monitor">
+                        </figure>
+                        <article>
+                            <h3>Movie Finder</h3>
+                            <p>Built with jQuery and Movie API. Movie finder displays the most popular, upcoming and top rated movies.  You can also do a quick search for a movie.</p>
+                            <a class="btn" href="http://moviefinder.gilbertjose.ca/" target="_blank">View Live</a>
+                        </article>
+                        </li>
                 </ul>
             </section>
-            <section class="contactSection" id="contactSection">
+            <section class="contactSection wrapper" id="contactSection">
                 <h2>Get in Touch</h2>
                 <section class="contactForm wrapper">
                     <form id="contactForm" method="POST">
-                        <input type="text" name="name" placeholder="Your name">
-                        <input type="email" name="_replyto" placeholder="Your email">
-                        <textarea name="message" placeholder="Your message"></textarea>
+                        <input type="text" name="name" placeholder="Name:" required>
+                        <input type="email" name="_replyto" placeholder="Email:" required>
+                        <textarea name="message" placeholder="Message:" rows="1" required></textarea>
                         <input type="submit" value="Send">
                     </form>
-                    <div class="contactSocial">
+                </section>
+                    <div class="contactSocial wrapper">
                         <ul class="socialIconList">
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/gilbertjose" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="mailto:code@glbertjose.ca"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/gilbert_j5" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/bet-code" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                            <li><a href="https://codepen.io/bet-code/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
-                </section>
             </section>
             <footer>
-                <p>&copy; Gilbert Jose 2017</p>               
+                <p>&copy; 2018 Gilbert Jose</p>               
             </footer>            
         </main>
 
-    <script src="https://use.fontawesome.com/452826394c.js"></script>
+    <script 
     <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
     <script src="scripts/main.js"></script>
 
 </body>

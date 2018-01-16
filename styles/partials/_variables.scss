@@ -1,11 +1,26 @@
 // ====== colours =====
 
-$primaryColour: #0393ff;
-$secondaryColour: #00f2fe;
-$thirdColour: #fff;
-$fourthColour: #222;
-$fifthColour: #777;
-$sixthColour: #fcfcfc;
+$primaryColour: rgba(44, 62, 80,1);
+$secondaryColour: rgba(236, 240, 241,1);
+$thirdColour: rgba(52, 73, 94,1);
+$fourthColour: rgba(127, 140, 141,1);
+$fifthColour: rgba(189, 195, 199,1.0);
+
+// ===== accent colours ======
+
+$firstAccentColour: rgb(255, 94, 0);
+$secondAccentColour: rgb(59, 148, 0);
+$thirdAccentColour: #42B4E6;
+$fourthAccentColour: rgba(155, 89, 182,1);
+$sixthAccentColour: rgba(41, 128, 185,1.0);
+
+// ===== overlay colour =====
+
+$primaryOverlay: rgba(44, 62, 80,.5);
+$secondaryOverlay: rgba(2,2,2,.8);
+$thirdOverlay: rgba(34, 34, 34,.9);
 
 
 // ===== Font Style =====
+
+$primaryFont: 'Lato', sans-serif;

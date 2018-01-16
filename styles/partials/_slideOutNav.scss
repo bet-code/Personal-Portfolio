@@ -1,0 +1,107 @@
+// ===== SLIDEOUT NAV
+
+.slideOutNav {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
+  ul {
+    z-index: 20;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    text-align: center;
+    background: $thirdOverlay;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -40%;
+    box-shadow: -3px 1px 8px $primaryColour;
+    transition: right .3s ease;
+    li {
+      margin: 20px 0;
+      &:before, &:after {
+        top: 10%;
+      }
+      a {
+        display: block;
+        color: $thirdAccentColour;
+        padding: 20px;
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: color .3s ease,
+                    background .3s ease;
+        &:before, &:after {
+          bottom: 10%;
+        }
+        @media (max-width: 480px) {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+  label[for="toggleMenu"] {
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: $secondaryColour;
+    background: $thirdAccentColour;
+    border-radius: 50%;
+    box-shadow: -1px 1px 3px $primaryColour;
+    position: fixed;
+    top: 16px;
+    right: 40px;
+    cursor: pointer;
+    transition: color .3s, right .3s, background .3s ease;
+    @media (max-width: 769px) {
+        right: 30px;
+    }   
+    @media (max-width: 680px) {
+      right: 20px;
+    }
+    &:hover,
+    &:active {
+      color: $secondaryColour;
+      background: $thirdAccentColour;
+    }
+  }
+}
+
+label.menuOpen {
+  z-index: 21;
+  opacity: 1;
+  transition: opacity .3s ease;
+}
+
+label.menuClose {
+  z-index: 20;
+}
+
+input[type="checkbox"] {
+  display: none;
+  &:checked ~ label {
+    color: $thirdAccentColour;
+    background: $secondaryColour;
+  }
+  &:checked ~ label.menuOpen {
+    right: calc(40% - 26px);
+    opacity: 0;
+  }
+  &:checked ~ label.menuClose {
+    right: calc(40% + 26px);
+    background: $thirdAccentColour;
+    color: $secondaryColour;     
+    @media (max-width: 480px) {
+      right: calc(40% + 5px);
+    }
+  }
+  &:checked ~ ul {
+    right: 0;
+  }
+}

@@ -1,35 +1,65 @@
 // ===== PORTFOIO =====
 
 .portfolio {
+    margin: 40px auto;
+    @media (max-width: 480px) {
+        margin: 40px auto;
+    }
     h2 {
         text-transform: uppercase;
         text-align: center;
-        margin: 80px 0;
     }
 }
 
 .projectList {
     list-style: none;
+    margin: 0;
+    padding: 0;
     li {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         margin: 40px 0;
-        &:nth-of-type(2) {
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+        &:nth-of-type(2n) {
             flex-direction: row-reverse;
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
             article {
                 text-align: right;
+                @media (max-width: 768px) {
+                    text-align: center;
+                }
             }
         }
         figure {
-            width: 45%;
+            width: 50%;
+            @media (max-width: 940px) {
+                width: 45%;
+            }
+            @media (max-width: 768px) {
+                width: 80%;
+            }
+            @media (max-width: 768px) {
+                width: 90%;
+            }
             img {
                 max-width: 100%;
                 object-fit: cover;
             }
         }
         article {
-            width: 45%;
+            width: 40%;
+            @media (max-width: 940px) {
+                width: 50%;
+            }
+            @media (max-width: 768px) {
+                text-align: center;
+                width: 80%;
+            }
         }
     }
 }
